@@ -1,6 +1,8 @@
 module.exports.overview = function(req,res) {
   res.status(200).json({
-    message: "Overview"
+    overview: {
+      stats: req.body.stats
+    }
   })
 }
 
