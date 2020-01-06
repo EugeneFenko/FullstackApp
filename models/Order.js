@@ -1,10 +1,11 @@
-const mongoose = require('mongoose')
-const Schema =  mongoose.Schema
+const mongoose = require('mongoose');
+
+const { Schema } = mongoose;
 
 const ordersSchema = new Schema({
   date: {
     type: Date,
-    default: Date.now
+    default: Date.now,
   },
   order: {
     type: Number,
@@ -13,20 +14,20 @@ const ordersSchema = new Schema({
   list: [
     {
       name: {
-        type: String
+        type: String,
       },
       quantity: {
-        type: Number
+        type: Number,
       },
       cost: {
-        type: Number
-      }
-    }
+        type: Number,
+      },
+    },
   ],
   user: {
     ref: 'users',
-    type: Schema.Types.ObjectId
-  }
-})
+    type: Schema.Types.ObjectId,
+  },
+});
 
-module.exports = mongoose.model('orders', ordersSchema)
+module.exports = mongoose.model('orders', ordersSchema);

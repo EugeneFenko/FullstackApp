@@ -1,13 +1,13 @@
-module.exports.overview = function(req,res) {
+module.exports.overview = function (req, res) {
   res.status(200).json({
     overview: {
-      stats: req.body.stats
-    }
-  })
-}
+      stats: req.body.stats,
+    },
+  });
+};
 
-module.exports.analytics = function(req,res) {
+module.exports.analytics = function (req, res) {
   res.status(200).json({
-    message: "analytics"
-  })
-}
+    message: 'analytics',
+  });
+};

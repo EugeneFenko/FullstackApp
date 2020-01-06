@@ -1,11 +1,11 @@
-module.exports.getAll = function(req,res) {
+module.exports.getAll = (req, res) => {
   res.status(200).json({
-    message: "Login from control"
-  })
-}
+    message: 'Login from control',
+  });
+};
 
-module.exports.create = function(req,res) {
+module.exports.create = (req, res) => {
   res.status(200).json({
-    message: "Register from control"
-  })
-}
+    message: 'Register from control',
+  });
+};

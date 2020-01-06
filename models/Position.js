@@ -1,10 +1,11 @@
-const mongoose = require('mongoose')
-const Schema =  mongoose.Schema
+const mongoose = require('mongoose');
+
+const { Schema } = mongoose;
 
 const positionSchema = new Schema({
   name: {
     type: String,
-    required: true
+    required: true,
   },
   cost: {
     type: Number,
@@ -12,12 +13,12 @@ const positionSchema = new Schema({
   },
   categories: {
     ref: 'categories',
-    type: Schema.Types.ObjectId
+    type: Schema.Types.ObjectId,
   },
   user: {
     ref: 'users',
-    type: Schema.Types.ObjectId
-  }
-})
+    type: Schema.Types.ObjectId,
+  },
+});
 
-module.exports = mongoose.model('position', positionSchema)
+module.exports = mongoose.model('position', positionSchema);

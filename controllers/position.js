@@ -1,29 +1,29 @@
-module.exports.getAll = function(req,res) {
+module.exports.getAll = (req, res) => {
   res.status(200).json({
-    message: "Login from control"
-  })
-}
+    message: 'Login from control',
+  });
+};
 
-module.exports.getByID = function(req,res) {
+module.exports.getByID = (req, res) => {
   res.status(200).json({
-    message: "Login from control"
-  })
-}
+    message: 'Login from control',
+  });
+};
 
-module.exports.create = function(req,res) {
+module.exports.create = (req, res) => {
   res.status(200).json({
-    message: "Register from control"
-  })
-}
+    message: 'Register from control',
+  });
+};
 
-module.exports.remove = function(req,res) {
+module.exports.remove = (req, res) => {
   res.status(200).json({
-    message: "Register from control"
-  })
-}
+    message: 'Register from control',
+  });
+};
 
-module.exports.update = function(req,res) {
+module.exports.update = (req, res) => {
   res.status(200).json({
-    message: "Register from control"
-  })
-}
+    message: 'Register from control',
+  });
+};

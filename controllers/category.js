@@ -1,28 +1,28 @@
-module.exports.getAll = function(req,res) {
-  res.status(200).json({
-    message: "getAll"
-  })
-}
+module.exports.getAll = (req, res) => {
+  res.json({
+    message: 'Categories',
+  });
+};
 
-module.exports.getByID = function(req,res) {
+module.exports.getByID = (req, res) => {
   res.status(200).json({
-    message: "getID"
-  })
-}
+    message: 'getID',
+  });
+};
 
-module.exports.remove = function(req,res) {
+module.exports.remove = (req, res) => {
   res.status(200).json({
-    message: "getID"
-  })
-}
+    message: 'getID',
+  });
+};
 
-module.exports.create = function(req,res) {
+module.exports.create = (req, res) => {
   res.status(200).json({
-    message: "getID"
-  })
-}
-module.exports.update = function(req,res) {
+    message: 'getID',
+  });
+};
+module.exports.update = (req, res) => {
   res.status(200).json({
-    message: "getID"
-  })
-}
+    message: 'getID',
+  });
+};

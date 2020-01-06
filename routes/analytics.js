@@ -1,8 +1,9 @@
-const express = require('express')
-const controller = require('../controllers/analytics')
-const router = express.Router()
+const express = require('express');
+const controller = require('../controllers/analytics');
 
-router.get('/analytics', controller.analytics)
-router.post('/overview', controller.overview)
+const router = express.Router();
 
-module.exports = router
+router.get('/analytics', controller.analytics);
+router.post('/overview', controller.overview);
+
+module.exports = router;
