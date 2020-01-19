@@ -3,7 +3,7 @@ const controller = require('../controllers/position');
 
 const router = express.Router();
 
-router.get('/', controller.getAll);
+router.get('/:categoryID', controller.getByCategoryID);
 router.post('/', controller.create);
 router.patch('/:id', controller.update);
 router.delete('/:id', controller.remove);
